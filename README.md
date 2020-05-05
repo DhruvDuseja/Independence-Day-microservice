@@ -20,4 +20,4 @@ The list of countries and their independence days was scraped from Wikipedia.
 Once you have all the requirements down, launch using `python app.py`, and follow the link to see it in action.
 
 ## Architecure(but not really) overview:
-![Architecture ha ha haa..](media/soc\ diagram.png)
+![Architecture ha ha haa..](media/soc diagram.png)
