@@ -1,5 +1,5 @@
 # Independence-Day-microservice
-### A minimal microservice that returns the Independence day and the unicode for a flag of a country. :flag:
+### A minimal microservice that returns the Independence day and the unicode for a flag of a country, made using Flask.
 
 ## The Idea
 To make a microservice using Flask to return the Independence Day of a given country along with the unicode for it's flag.
