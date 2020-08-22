@@ -19,7 +19,7 @@ The list of countries and their independence days was scraped from Wikipedia.
 
 Once you have all the requirements down, launch using `python app.py`, and follow the link to see it in action.
 
-## Architecure(but not really) overview:
+## Architecture(but not really) overview:
 <p align="center">
   <img src="https://github.com/DhruvDuseja/Independence-Day-microservice/blob/master/media/soc%20diagram.png">
 </p>
