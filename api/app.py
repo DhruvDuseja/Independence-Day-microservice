@@ -29,17 +29,20 @@ def index():
 def get_day(country):
     iso = ""
     date = get_key(country)
+    data = {"message":"Country not found"}
     if date is not None:
         for i in countries:
             if country.title() == i.name:
                 iso += i.alpha_2
-                return jsonify({"Day": date, "Unicode flag": flag.flag(iso)})
+                data = {"Day": date, "Unicode flag": flag.flag(iso)}
+                return jsonify(data), 200
     else:
-            return jsonify({"message":"Country not found"})
+            return jsonify(data), 404
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return jsonify({"message":"Country not found"}), 404
+    data = {"message":"Country not found"}
+    return jsonify(data), 404
 
 if __name__ == '__main__':
     app.run(port=5008)
