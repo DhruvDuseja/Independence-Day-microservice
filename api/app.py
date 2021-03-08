@@ -25,7 +25,7 @@ def index():
             return redirect(url_for('get_day', country=country))
     return render_template('index.html', form=form)
 
-@app.route('/api/<string:country>')
+@app.route('/api/countries/<string:country>')
 def get_day(country):
     iso = ""
     date = get_key(country)
